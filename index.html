@@ -59,11 +59,51 @@
           placeholder="Enter your age"
         />
 
+        <label for="lang">Language</label>
         <label for="validationTooltip04" class="form-label">Role</label>
         <select class="form-select" id="current-role" required>
-          <option selected disabled value="">Choose...</option>
-          <option>...</option>
+          <option selected disabled value="">Select Current Role</option>
+          <option>Student</option>
+          <option>Full time job</option>
+          <option>Full time learner</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
         </select>
+        
+        <label for="D"> 
+          <input id="D" type="radio" name="DMN" value="Definitely" >Definitely 
+        </label>
+        <br>
+        <label for="M"> 
+          <input id="M" type="radio" name="DMN" value="Maybe" >Maybe 
+        </label>
+        <br>
+        <label for="N"> 
+          <input id="N" type="radio" name="DMN" value="Not Sure" >Not sure 
+        </label>
+
+        <label for="lang">Language</label>
+        <label for="validationTooltip04" class="form-label">Role</label>
+        <select class="form-select" id="current-role" required>
+          <option selected disabled value="">Select an Option</option>
+          <option>Challenges</option>
+          <option>Projects</option>
+          <option>Community</option>
+          <option>Open Source</option>
+        </select>
+
+        <label for="name" id="name" class="form-label">Any comments or suggestions?
+        </label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          aria-describedby="name"
+          value=""
+          required
+          placeholder="Enter your comment here..."
+        />
+
       </div>
       <!-- <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -74,10 +114,8 @@
         />
       </div> -->
       <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button id="submit" type="submit" class="btn btn-primary">Submit</button>
     </form>
 
     <!-- <h1>Hello World, we are software developers!</h1> -->
