@@ -33,6 +33,7 @@
           aria-describedby="name"
           value=""
           required
+          placeholder="Enter your name"
         />
         <label for="email" id="email" class="form-label">Email:</label>
         <input
@@ -42,17 +43,27 @@
           aria-describedby="email"
           value=""
           required
+          placeholder="Enter your email"
         />
 
         <label for="number" id="number" class="form-label">Number:</label>
         <input
           type="number"
+          min="0"
+          max="100"
           class="form-control"
           id="number"
           aria-describedby="number"
           value=""
           required
+          placeholder="Enter your age"
         />
+
+        <label for="validationTooltip04" class="form-label">Role</label>
+        <select class="form-select" id="current-role" required>
+          <option selected disabled value="">Choose...</option>
+          <option>...</option>
+        </select>
       </div>
       <!-- <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Password</label>
